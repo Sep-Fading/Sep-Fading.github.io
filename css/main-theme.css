@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+body {
+    background-image: url(../imgs/main_bg.png);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-container {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-rows: 18.25rem auto auto;
+}
+
+/* Global styles */
+
+h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    /* 4.05rem */
+    letter-spacing: 0.3rem;
+}
+
+
+/* Header & Nav Menu */
+
+.page-header-content-container {
+    width: 100%;
+    height: 20rem;
+}
+
+.page-header-center {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.page-header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-block: 4rem;
+    list-style: none;
+    gap: 5vw;
+}
+
+.page-header-nav ul li {
+    display: inline-block;
+    position: relative;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.45rem;
+    text-transform: uppercase;
+    transition: 200ms ease;
+}
+
+.page-header-nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 4vh;
+    left: 0;
+    background-color: #FFF;
+    font-size: 1.1rem;
+    transform-origin: bottom right;
+    transition: transform 200ms ease-out;
+}
+
+.page-header-nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.page-header-nav ul li:hover {
+    font-size: 1.1rem;
+    transition: 200ms ease;
+}
