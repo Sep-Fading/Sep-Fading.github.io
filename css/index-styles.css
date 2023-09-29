@@ -1,0 +1,55 @@
+@import url(main-theme.css);
+@import url(animations.css);
+
+/* First section */
+
+/* Layout */
+.page-content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-inline: 10rem
+}
+
+.page-first-content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5vw;
+    place-items: center;
+}
+
+.h1-name{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: end;
+}
+
+.h1-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    
+}
+
+/* contanct link button */
+.contact-link-btn{
+    display: grid;
+    grid-area: touchbtn;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: baseline;
+}
+.contact-link-btn a{
+    position: relative;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.45rem;
+    text-transform: uppercase;
+}
