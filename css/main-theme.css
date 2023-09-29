@@ -4,14 +4,26 @@ body {
     background-image: url(../imgs/main_bg.png);
     background-color: black;
     background-size: cover;
+    background-position: center -50px;
     background-repeat: no-repeat;
 }
 
 .page-container {
+    width: 100%;
+    height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-areas: 
+        'header header header'
+        'content content content'
+        'touchbtn touchbtn touchbtn';
+    justify-content: center;
     place-items: center;
-    align-items: center;
-    grid-template-rows: 18.25rem auto auto;
+    align-content: center;
+    grid-auto-flow: column;
+
+    row-gap: 5vh;
 }
 
 /* Global styles */
@@ -19,22 +31,25 @@ body {
 h1 {
     color: #FFF;
     font-family: Inter;
-    font-size: 3rem;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    background-color: black;
 }
 
 p {
     color: #FFF;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 135%;
-    /* 4.05rem */
-    letter-spacing: 0.3rem;
+    line-height: 135%; /* 4.05rem */
+    letter-spacing: 0.2rem;
+    
+    background-color: black;
+    text-wrap: wrap;
 }
 
 
@@ -43,12 +58,17 @@ p {
 .page-header-content-container {
     width: 100%;
     height: 20rem;
+    grid-area: header;
 }
 
 .page-header-center {
-    display: grid;
+    justify-items: center;
     place-items: center;
-    align-content: center;
+}
+
+.page-header{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .page-header-nav ul {
@@ -62,40 +82,38 @@ p {
     gap: 5vw;
 }
 
-.page-header-nav ul li {
-    display: inline-block;
+.page-header-nav ul li, .hoveranim{
     position: relative;
     color: #FFF;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.45rem;
     text-transform: uppercase;
     transition: 200ms ease;
+    text-wrap: nowrap;
 }
 
-.page-header-nav ul li::after {
+.page-header-nav ul li::after, .hoveranim::after{
     content: '';
     position: absolute;
     width: 95%;
     transform: scaleX(0);
     height: 2px;
-    top: 4vh;
+    top: 3vh;
     left: 0;
     background-color: #FFF;
-    font-size: 1.1rem;
     transform-origin: bottom right;
     transition: transform 200ms ease-out;
 }
 
-.page-header-nav ul li:hover::after {
+.page-header-nav ul li:hover::after , .hoveranim:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.page-header-nav ul li:hover {
-    font-size: 1.1rem;
+.page-header-nav ul li:hover , .hoveranim:hover{
     transition: 200ms ease;
 }

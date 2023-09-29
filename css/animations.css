@@ -1,0 +1,18 @@
+/* Animation for fade in */
+
+.fadeinAnimation {
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+    animation-delay: 100ms;
+    animation-iteration-count: 1;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
