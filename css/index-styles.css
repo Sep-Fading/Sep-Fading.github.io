@@ -388,3 +388,11 @@
     grid-column-start: 5;
     grid-column-end: 6;
 }
+
+.btn-off p{
+    background-color: #FFF;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black; 
+}
