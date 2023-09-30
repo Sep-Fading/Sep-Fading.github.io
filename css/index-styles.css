@@ -7,61 +7,61 @@
 
 .page-container-1 {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr;
-    grid-template-areas: 
-        'header header header'
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas:
         'content content content'
         'touchbtn touchbtn touchbtn';
     justify-content: center;
     place-items: center;
     align-content: center;
     grid-auto-flow: column;
-
-    row-gap: 5vh;
 }
 
-.page-content{
+.page-content {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-area: content;
     margin-inline: 10rem
 }
 
-.page-first-content-wrapper{
+.page-first-content-wrapper {
     display: grid;
+    ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 5vw;
     place-items: center;
 }
 
-.h1-name{
+.h1-name {
     grid-column-start: 1;
     grid-column-end: 2;
     justify-self: end;
 }
 
-.h1-description{
+.h1-description {
     display: flex;
     flex-direction: column;
     gap: 1vh;
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: start;
-    
+    margin-right: 40%;
 }
 
 /* contanct link button */
-.contact-link-btn{
+.contact-link-btn {
     display: grid;
     grid-area: touchbtn;
     grid-column-start: 2;
     grid-column-end: 3;
     align-self: baseline;
 }
-.contact-link-btn a{
+
+.contact-link-btn a {
     position: relative;
     color: #FFF;
     font-family: Inter;
@@ -74,9 +74,9 @@
 }
 
 
-/* Second section */
+/* EXPERIENCE SECTION */
 
-.page-container-2{
+.page-container-2 {
     background-image: url(../imgs/main_bgcontin.jpg);
     width: 100vw;
     height: 100vh;
@@ -89,22 +89,19 @@
     grid-auto-flow: column;
 
     row-gap: 5vh;
-    margin-block: 5%;
+    margin-top: 5%;
 }
 
-.section-title{
+.section-title {
     grid-column-start: 2;
     grid-column-end: 5;
     justify-self: center;
 }
 
-.section-title p{
+.section-title p {
     margin-right: 15%;
     margin-top: 1.25%;
 }
-
-
-/* columns */
 
 .exp-col {
     display: grid;
@@ -121,7 +118,7 @@
     border-radius: 1rem;
 }
 
-.exp-col p{
+.exp-col p {
     color: black;
     background-color: white;
     text-transform: uppercase;
@@ -130,7 +127,7 @@
     margin-block: 7.5%;
 }
 
-.exp-col-img{
+.exp-col-img {
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -140,11 +137,11 @@
     border-radius: 0.5rem;
 }
 
-.exp-col-btn{
+.exp-col-btn {
     margin-bottom: 2.5%;
 }
 
-.col1{
+.col1 {
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -152,18 +149,18 @@
     grid-column-end: 3;
 }
 
-.col1 p{
+.col1 p {
     margin-right: 50%;
 }
 
-.col1 .exp-col-img{
+.col1 .exp-col-img {
     background-image: url(../imgs/ldnnootslogo.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.col2{
+.col2 {
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -171,18 +168,18 @@
     grid-column-end: 4;
 }
 
-.col2 p{
+.col2 p {
     margin-right: 50%;
 }
 
-.col2 .exp-col-img{
+.col2 .exp-col-img {
     background-image: url(../imgs/discordlogo.webp);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.col3{
+.col3 {
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -190,22 +187,22 @@
     grid-column-end: 5;
 }
 
-.col3 p{
+.col3 p {
     margin-right: 40%;
 }
 
-.col3 .exp-col-img{
+.col3 .exp-col-img {
     background-image: url(../imgs/unitylogo.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.exp-col-desc p{
+.exp-col-desc p {
     margin-right: 20%;
 }
 
-.exp-col-btn p{
+.exp-col-btn p {
     color: white;
     background-color: black;
     margin-right: 7.5%;
@@ -219,7 +216,7 @@
     transition: 500ms;
 }
 
-.exp-col-btn p:hover{
+.exp-col-btn p:hover {
     background-color: #FFF;
     color: black;
     border-style: solid;
@@ -229,4 +226,132 @@
     transition: 500ms;
     cursor: pointer;
 }
+
+
+/* EXPERTISE SECTION */
+.page-container-3 {
+    background-image: url(../imgs/main_bgcontin.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    grid-auto-flow: column;
+
+    row-gap: 5vh;
+    margin-bottom: 5%;
+}
+
+.expertise-col{
+    width: 85%;
+    margin-top: 10%;
+    align-self: start;
+}
+
+.skills-container {
+    width: 300px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.itm1{
+    grid-row: 1/2;
+}
+
+.itm2{
+    grid-row: 2/3;
+}
+
+.itm3{
+    grid-row: 3/4;
+}
+
+.itm4{
+    grid-row: 4/5;
+}
+
+.skills-container p{
+    margin:0;
+    font-size: 0.9rem;
+}
+
+.skills-flex {
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-template-rows: 1fr;
+    margin-block: 20px;
+    align-items: center;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    border: 1px solid white;
+    margin: 0 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-bar-inside {
+    border-radius: 30px;
+    width: 50%;
+    height: 16px;
+    background: white;
+}
+
+.htmlbar{
+    width: 100%;
+}
+
+.cssbar{
+    width: 80%;
+}
+
+.jsbar{
+    width: 55%;
+}
+
+.phpbar{
+    width: 45%;
+}
+
+.javabar{
+    width: 90%;
+}
+
+.pythonbar{
+    width: 80%;
+}
+
+.csharpbar{
+    width: 70%;
+}
+
+.cppbar{
+    width: 25%;
+}
+
+.leaderbar{
+    width: 80%;
+}
+
+.commsbar{
+    width: 90%;
+}
+
+.teambar{
+    width: 80%;
+}
+
+.managebar{
+    width: 100%;
+}
+
+/* PROJECTS SECTION */
 
