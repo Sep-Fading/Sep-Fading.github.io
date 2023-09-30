@@ -13,6 +13,28 @@
     100% { opacity: 1; }
 }
 
+/* Animation for skill bar slides */
+
+.slidebarAnimation {
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+    animation-delay: 100ms;
+    animation-iteration-count: 1;
+    animation-name: slide1;
+}
+
+@keyframes slide1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+/* Slide In Animation */
+
 
 
 
