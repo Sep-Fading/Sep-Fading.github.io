@@ -89,7 +89,7 @@
     grid-auto-flow: column;
 
     row-gap: 5vh;
-    margin-top: 5%;
+    margin-block: 10%;
 }
 
 .section-title {
@@ -103,7 +103,7 @@
     margin-top: 1.25%;
 }
 
-.exp-col {
+.exp-col, .projects-col {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 0.75fr 1fr;
@@ -118,7 +118,7 @@
     border-radius: 1rem;
 }
 
-.exp-col p {
+.exp-col p, .projects-col p {
     color: black;
     background-color: white;
     text-transform: uppercase;
@@ -127,7 +127,7 @@
     margin-block: 7.5%;
 }
 
-.exp-col-img {
+.exp-col-img, .projects-col-img {
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -137,7 +137,7 @@
     border-radius: 0.5rem;
 }
 
-.exp-col-btn {
+.exp-col-btn, .projects-col-btn {
     margin-bottom: 2.5%;
 }
 
@@ -198,11 +198,11 @@
     background-repeat: no-repeat;
 }
 
-.exp-col-desc p {
+.exp-col-desc p, .projects-col-desc p {
     margin-right: 20%;
 }
 
-.exp-col-btn p {
+.exp-col-btn p, .projects-col-btn p {
     color: white;
     background-color: black;
     margin-right: 7.5%;
@@ -216,7 +216,7 @@
     transition: 500ms;
 }
 
-.exp-col-btn p:hover {
+.exp-col-btn p:hover, .projects-col-btn p:hover {
     background-color: #FFF;
     color: black;
     border-style: solid;
@@ -232,7 +232,7 @@
 .page-container-3 {
     background-image: url(../imgs/main_bgcontin.jpg);
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 2fr;
@@ -242,7 +242,7 @@
     grid-auto-flow: column;
 
     row-gap: 5vh;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .expertise-col{
@@ -355,3 +355,36 @@
 
 /* PROJECTS SECTION */
 
+.page-container-4 {
+    background-image: url(../imgs/main_bgcontin.jpg);
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    grid-auto-flow: column;
+
+    row-gap: 5vh;
+    margin-top: 5%;
+}
+
+.page-container-4 .section-title{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    justify-self: start;
+}
+
+.page-container-4 .section-title p{
+    margin-right: 0%;
+}
+
+.col4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
