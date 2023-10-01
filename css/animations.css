@@ -35,6 +35,51 @@
 
 /* Slide In Animation */
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 800ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+/* delays */
+
+.col1{
+    transition-delay: 0ms;
+}
+
+.col2{
+    transition-delay: 200ms;
+}
+
+.col3{
+    transition-delay: 400ms;
+}
+
+.col4{
+    transition-delay: 600ms;
+}
+
+.row1{
+    transition-delay: 0ms;
+}
+
+.row2{
+    transition-delay: 200ms;
+}
+
+/* scroll snaps */
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 
 
