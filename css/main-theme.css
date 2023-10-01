@@ -34,6 +34,17 @@ h1 {
     background-color: black;
 }
 
+h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: black;
+}
+
 h3 {
     color: #FFF;
     font-family: Inter;
