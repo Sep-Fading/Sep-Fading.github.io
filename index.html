@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sepehr Shamloo - Home</title>
     <link rel="stylesheet" href="css/index-styles.css">
-
+    <script defer src="js/animate.js"></script>
 
     <!-- FONT IMPORTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,364 +17,392 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <div class="page-header">
-            <div class="page-header-nav">
-                <ul>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                </ul>
+    <!-- If you're inspect elementing the site to see which template I used, don't worry, it's all hand made ;)-->
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-nav">
+                    <ul>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="page-container-1">
-            <div class="page-content">
-                <div class="page-first-content-wrapper">
-                    <div class="h1-name fadeinAnimation">
-                        <h1>Sepehr</h1>
-                        <h1>Shamloo</h1>
+            <div class="page-container-1">
+                <div class="page-content">
+                    <div class="page-first-content-wrapper">
+                        <div class="h1-name fadeinAnimation">
+                            <h1>Sepehr</h1>
+                            <h1>Shamloo</h1>
+                        </div>
+                        <div class="h1-description fadeinAnimation">
+                            <p>An aspiring Software Engineer looking to work in FinTech.</p>
+                            <p>Studying CompSci at Queen Mary’s University.</p>
+                        </div>
                     </div>
-                    <div class="h1-description fadeinAnimation">
-                        <p>An aspiring Software Engineer looking to work in FinTech.</p>
-                        <p>Studying CompSci at Queen Mary’s University.</p>
-                    </div>
+                </div>
+
+                <div class="contact-link-btn">
+                    <a class="hoveranim" href="#contacts">Get In Touch</a>
                 </div>
             </div>
 
-            <div class="contact-link-btn">
-                <a class="hoveranim" href="#contacts">Get In Touch</a>
-            </div>
-        </div>
-
-        <div class="page-container-2" id="experience">
-            <div class="section-title">
-                <h1>Experience</h1>
-                <hr>
-                <p>LEARN ABOUT MY PROFESSIONAL AND PERSONAL JOURNEY RELATED TO COMPUTER SCIENCE AND DEVELOPMENT</p>
-            </div>
-            <div class="exp-col col1">
-                <div class="exp-col-title">
-                    <p>London Nootropics</p>
+            <div class="page-container-2" id="experience">
+                <div class="section-title hidden">
+                    <h1>Experience</h1>
+                    <hr>
+                    <p>LEARN ABOUT MY PROFESSIONAL AND PERSONAL JOURNEY RELATED TO COMPUTER SCIENCE AND DEVELOPMENT</p>
                 </div>
-                <div class="exp-col-img">
+                <div class="exp-col col1 hidden">
+                    <div class="exp-col-title">
+                        <p>London Nootropics</p>
+                    </div>
+                    <div class="exp-col-img">
+                    </div>
+                    <div class="exp-col-desc">
+                        <p>Employed <br>web development</p>
+                    </div>
+                    <div class="exp-col-btn">
+                        <a href="https://www.londonnootropics.com/">
+                            <p>View Website ►</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="exp-col-desc">
-                    <p>Employed <br>web development</p>
-                </div>
-                <div class="exp-col-btn">
-                    <a href="https://www.londonnootropics.com/">
-                        <p>View Website ►</p>
-                    </a>
-                </div>
-            </div>
-            <div class="exp-col col2">
-                <div class="exp-col-title">
-                    <p>Discord API with C#</p>
-                </div>
-                <div class="exp-col-img">
-                </div>
-                <div class="exp-col-desc">
-                    <p>Freelanced <br>Server Software</p>
-                </div>
-                <div class="exp-col-btn">
-                    <p>GITHUB REPO ►</p>
-                </div>
-            </div>
-            <div class="exp-col col3">
-                <div class="exp-col-title">
-                    <p>Game Dev Using Unity</p>
-                </div>
-                <div class="exp-col-img">
-                </div>
-                <div class="exp-col-desc">
-                    <p>Personal <br>Game Dev - WIP</p>
-                </div>
-                <div class="exp-col-btn">
-                    <a href="https://github.com/Sep-Fading/unity-soulslike">
+                <div class="exp-col col2 hidden">
+                    <div class="exp-col-title">
+                        <p>Discord API with C#</p>
+                    </div>
+                    <div class="exp-col-img">
+                    </div>
+                    <div class="exp-col-desc">
+                        <p>Freelanced <br>Server Software</p>
+                    </div>
+                    <div class="exp-col-btn">
                         <p>GITHUB REPO ►</p>
-                    </a>
+                    </div>
+                </div>
+                <div class="exp-col col3 hidden">
+                    <div class="exp-col-title">
+                        <p>Game Dev Using Unity</p>
+                    </div>
+                    <div class="exp-col-img">
+                    </div>
+                    <div class="exp-col-desc">
+                        <p>Personal <br>Game Dev - WIP</p>
+                    </div>
+                    <div class="exp-col-btn">
+                        <a href="https://github.com/Sep-Fading/unity-soulslike">
+                            <p>GITHUB REPO ►</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="page-container-3" id="expertise">
-            <div class="section-title">
-                <h1>Expertise</h1>
-                <hr>
-                <p>GET A QUICK GRASP OF MY KNOWLEDGE AND CAPABILITIES REGARDING SKILLS RELATED TO COMPUTER SCIENCE AND
-                    SKILLS USED IN SOFTWARE ENGINEERING</p>
-            </div>
-
-            <div class="expertise-col col1">
-                <div class="expertise-col-title">
-                    <p>Web Development</p>
+            <div class="page-container-3" id="expertise">
+                <div class="section-title hidden">
+                    <h1>Expertise</h1>
                     <hr>
-                    <br>
+                    <p>GET A QUICK GRASP OF MY KNOWLEDGE AND CAPABILITIES REGARDING SKILLS RELATED TO COMPUTER SCIENCE
+                        AND
+                        SKILLS USED IN SOFTWARE ENGINEERING</p>
                 </div>
-                <div class="skills-container">
-                    <!-- HTML -->
-                    <div class="skills-flex itm1">
-                        <p>HTML</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside htmlbar"></div>
+
+                <div class="expertise-col col1 hidden">
+                    <div class="expertise-col-title">
+                        <p>Web Development</p>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="skills-container">
+                        <!-- HTML -->
+                        <div class="skills-flex itm1">
+                            <p>HTML</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside htmlbar"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class="skills-flex itm2">
+                            <p>CSS</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside cssbar"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- JS -->
+                        <div class="skills-flex itm3">
+                            <p>JAVASCRIPT</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside jsbar"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="skills-flex itm4">
+                            <p>PHP</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside phpbar"></div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
 
-                    <!-- CSS -->
-                    <div class="skills-flex itm2">
-                        <p>CSS</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside cssbar"></div>
-                        </div>
-                        
+                <div class="expertise-col col2 hidden">
+                    <div class="expertise-col-title">
+                        <p>Programming Languages</p>
+                        <hr>
+                        <br>
                     </div>
+                    <div class="skills-container">
+                        <!-- Java -->
+                        <div class="skills-flex itm1">
+                            <p>JAVA</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside javabar"></div>
+                            </div>
 
-                    <!-- JS -->
-                    <div class="skills-flex itm3">
-                        <p>JAVASCRIPT</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside jsbar"></div>
                         </div>
-                       
+
+                        <!-- Python -->
+                        <div class="skills-flex itm2">
+                            <p>PYTHON</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside pythonbar"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- C# -->
+                        <div class="skills-flex itm3">
+                            <p>C#</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside csharpbar"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- C++ -->
+                        <div class="skills-flex itm4">
+                            <p>C++</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside cppbar"></div>
+                            </div>
+
+                        </div>
                     </div>
+                </div>
 
-                    <!-- PHP -->
-                    <div class="skills-flex itm4">
-                        <p>PHP</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside phpbar"></div>
+                <div class="expertise-col col3 hidden">
+                    <div class="expertise-col-title">
+                        <p>Professional <br>Skills</p>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="skills-container">
+                        <!-- Leadership -->
+                        <div class="skills-flex itm1">
+                            <p>LEADERSHIP</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside leaderbar"></div>
+                            </div>
                         </div>
-                        
+
+                        <!-- Communication -->
+                        <div class="skills-flex itm2">
+                            <p>COMMUNICATION</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside commsbar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Teamwork -->
+                        <div class="skills-flex itm3">
+                            <p>TEAMWORK</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside teambar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Resource Management -->
+                        <div class="skills-flex itm4">
+                            <p>MANAGEMENT</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-inside managebar"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="expertise-col col2">
-                <div class="expertise-col-title">
-                    <p>Programming Languages</p>
+            <div class="page-container-4" id="projects">
+                <div class="section-title hidden">
+                    <h1>Projects</h1>
                     <hr>
-                    <br>
+                    <p>VIEW MY PERSONAL PROJECTS RELATED TO COMPUTER SCIENCE AND SOFTWARE ENGINEERING, SOME PROJECTS ARE
+                        PRIVATED IN GITHUB, FEEL FREE TO CONTACT ME FOR FURTHER INFORMATION</p>
                 </div>
-                <div class="skills-container">
-                    <!-- Java -->
-                    <div class="skills-flex itm1">
-                        <p>JAVA</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside javabar"></div>
-                        </div>
-                        
+
+                <div class="projects-col col1 hidden">
+                    <div class="projects-col-title">
+                        <p>Attendance Bot</p>
                     </div>
-
-                    <!-- Python -->
-                    <div class="skills-flex itm2">
-                        <p>PYTHON</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside pythonbar"></div>
-                        </div>
-                        
+                    <div class="projects-col-img">
                     </div>
-
-                    <!-- C# -->
-                    <div class="skills-flex itm3">
-                        <p>C#</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside csharpbar"></div>
-                        </div>
-                        
+                    <div class="projects-col-desc">
+                        <p>API & .NET<br>Using C#</p>
                     </div>
-
-                    <!-- C++ -->
-                    <div class="skills-flex itm4">
-                        <p>C++</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside cppbar"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="expertise-col col3">
-                <div class="expertise-col-title">
-                    <p>Professional <br>Skills</p>
-                    <hr>
-                    <br>
-                </div>
-                <div class="skills-container">
-                    <!-- Leadership -->
-                    <div class="skills-flex itm1">
-                        <p>LEADERSHIP</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside leaderbar"></div>
-                        </div>
-                    </div>
-
-                    <!-- Communication -->
-                    <div class="skills-flex itm2">
-                        <p>COMMUNICATION</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside commsbar"></div>
-                        </div>
-                    </div>
-
-                    <!-- Teamwork -->
-                    <div class="skills-flex itm3">
-                        <p>TEAMWORK</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside teambar"></div>
-                        </div>
-                    </div>
-
-                    <!-- Resource Management -->
-                    <div class="skills-flex itm4">
-                        <p>MANAGEMENT</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inside managebar"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-container-4" id="projects">
-            <div class="section-title">
-                <h1>Projects</h1>
-                <hr>
-                <p>VIEW MY PERSONAL PROJECTS RELATED TO COMPUTER SCIENCE AND SOFTWARE ENGINEERING, SOME PROJECTS ARE PRIVATED IN GITHUB, FEEL FREE TO CONTACT ME FOR FURTHER INFORMATION</p>
-            </div>
-
-            <div class="projects-col col1">
-                <div class="projects-col-title">
-                    <p>Attendance Bot</p>
-                </div>
-                <div class="projects-col-img">
-                </div>
-                <div class="projects-col-desc">
-                    <p>API & .NET<br>Using C#</p>
-                </div>
-                <div class="projects-col-btn">
-                    <p>GITHUB REPO ►</p>
-                </div>
-            </div>
-            <div class="projects-col col3">
-                <div class="projects-col-title">
-                    <p>Physics In Unity</p>
-                </div>
-                <div class="projects-col-img">
-                </div>
-                <div class="projects-col-desc">
-                    <p>3D Animation <br>Physics with C#</p>
-                </div>
-                <div class="projects-col-btn">
-                    <a href="">
-                        <p>LEARN MORE ►</p>
-                    </a>
-                </div>
-            </div>
-            <div class="projects-col col2">
-                <div class="projects-col-title">
-                    <p>sort Visualiser</p>
-                </div>
-                <div class="projects-col-img">
-                </div>
-                <div class="projects-col-desc">
-                    <p>Python <br>Large datasets</p>
-                </div>
-                <div class="projects-col-btn">
-                    <a href="">
+                    <div class="projects-col-btn">
                         <p>GITHUB REPO ►</p>
-                    </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="projects-col col4">
-                <div class="projects-col-title">
-                    <p>UNIVERSITY PROJECTS</p>
+                <div class="projects-col col2 hidden">
+                    <div class="projects-col-title">
+                        <p>sort Visualiser</p>
+                    </div>
+                    <div class="projects-col-img">
+                    </div>
+                    <div class="projects-col-desc">
+                        <p>Python <br>Large datasets</p>
+                    </div>
+                    <div class="projects-col-btn">
+                        <a href="">
+                            <p>GITHUB REPO ►</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="projects-col-img">
+
+                <div class="projects-col col3 hidden">
+                    <div class="projects-col-title">
+                        <p>Physics In Unity</p>
+                    </div>
+                    <div class="projects-col-img">
+                    </div>
+                    <div class="projects-col-desc">
+                        <p>3D Animation <br>Physics with C#</p>
+                    </div>
+                    <div class="projects-col-btn">
+                        <a href="">
+                            <p>LEARN MORE ►</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="projects-col-desc">
-                    <p>Python <br>Java</p>
-                </div>
-                <div class="projects-col-btn btn-off">
+
+                <div class="projects-col col4 hidden">
+                    <div class="projects-col-title">
+                        <p>UNIVERSITY PROJECTS</p>
+                    </div>
+                    <div class="projects-col-img">
+                    </div>
+                    <div class="projects-col-desc">
+                        <p>Python <br>Java</p>
+                    </div>
+                    <div class="projects-col-btn btn-off">
                         <p>PRIVATED</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="page-container-5" id="aboutme">
-            <div class="section-title">
-                <h1>About Me</h1>
-                <hr>
-                <p>MY HOBBIES, PASSIONS AND GOALS FOR THE FUTURE. A SUMMARY OF MY PERSONAL AND EDUCATION RELATED JOURNEY AS A DEVELOPER.</p>
-            </div>
-
-            <div class="about-row row1">
-                <div class="about-title">
-                    <h2>EDUCATIONAL & PROFESSIONAL SUMMARY</h2>
+            <div class="page-container-5" id="aboutme">
+                <div class="section-title hidden">
+                    <h1>About Me</h1>
                     <hr>
+                    <p>MY HOBBIES, PASSIONS AND GOALS FOR THE FUTURE. A SUMMARY OF MY PERSONAL AND EDUCATION RELATED
+                        JOURNEY AS A DEVELOPER.</p>
                 </div>
-                <div class="about-desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe quos corporis delectus earum vero quam, tempore alias cupiditate quisquam! Illum nisi voluptatem iure. Velit, vero architecto! Eius, ex cupiditate.</p>
-                </div>
-                <div class="about-img">
 
+                <div class="about-row row1 hidden">
+                    <div class="about-title">
+                        <h2>EDUCATIONAL & PROFESSIONAL SUMMARY</h2>
+                        <hr>
+                    </div>
+                    <div class="about-desc">
+                        <p>After completing my A-Level studies and achieving A* A A in Mathematics, Computer Science and
+                            Physics, I pursued further studies to enhance my knowledge of Computer Science and develop
+                            the necessary skills to become a professional software engineer. <br>
+                            Before this however, I took a gap year and was hired by London Nootropics as a web developer
+                            to enhance their e-commerce website against their competitors. At London Nootropics, I
+                            gained skills in front-end development, SEO and stress testing servers and securing them
+                            against spams. <br>
+                            I am currently a second year Computer Science student at Queen Mary's University of London,
+                            one of the top global universities for my course, following up with performance of 87%
+                            across all modules in my first year. <br>
+                        </p>
+                    </div>
+                    <div class="about-img">
+
+                    </div>
+                </div>
+
+                <div class="about-row row2 hidden">
+                    <div class="about-title">
+                        <h2>FUTURE GOALS & PLANS</h2>
+                        <hr>
+                    </div>
+                    <div class="about-desc">
+                        <p>As a programming enthusiast, I enjoy the process learning game development and spending time
+                            dabbling into creative skills that help me design better user interfaces for softwares and
+                            websites. <br>
+                            I plan to use this set of skills along with my learning experience in University and via
+                            extra curricular activities to develop a platform that revolutionises the process of
+                            employment, for employers and employees alike.
+                            This is a large project that I have already somewhat begun but will need to further enhance
+                            my abilities as a developer to fully build and publish. </p>
+                    </div>
+                    <div class="about-img">
+                    </div>
                 </div>
             </div>
 
-            <div class="about-row row2">
-                <div class="about-title">
-                    <h2>HOBBIES, FUTURE GOALS & PLANS</h2>
-                    <hr>
+            <hr>
+
+            <div class="page-footer hidden" id="contacts">
+                <div class="footer-title">
                 </div>
-                <div class="about-desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe quos corporis delectus earum vero quam, tempore alias cupiditate quisquam! Illum nisi voluptatem iure. Velit, vero architecto! Eius, ex cupiditate.</p>
-                </div>
-                <div class="about-img">
-                    
+                <div class="footer-socials">
+                    <div class="email-link txtlink">
+                        <a class="hoveranim" href="mailto: personal.sepehr@gmail.com">personal.sepehr@gmail.com</a>
+                    </div>
+                    <div class="phonenum-link txtlink">
+                        <a class="hoveranim" href="tel: +447447962728">+447447962728</a>
+                    </div>
+                    <div class="linkdin-link txtlink">
+                        <a class="hoveranim" href="https://www.linkedin.com/in/sepshamloodev/">LinkedIn</a>
+                    </div>
+                    <div class="github-link txtlink">
+                        <a class="hoveranim" href="https://github.com/Sep-Fading">GitHub</a>
+                    </div>
+
+                    <!--- Icons _-->
+                    <div class="email-icon ftr-icon">
+                        <img src="./imgs/svgs/4550857_email_gmail_mail_sending_yahoo_icon.svg" alt="email-icon">
+                    </div>
+
+                    <div class="phonenum-icon ftr-icon">
+                        <img src="./imgs/svgs/2643221_call_chat_messenger_talk_viber_icon.svg" alt="phonenum-icon">
+                    </div>
+
+                    <div class="linkdin-icon ftr-icon">
+                        <img src="./imgs/svgs/5279114_linkedin_network_social network_linkedin logo_icon.svg"
+                            alt="linkdin-icon">
+                    </div>
+
+                    <div class="github-icon ftr-icon">
+                        <img src="./imgs/svgs/291716_github_logo_social network_social_icon.svg" alt="github-icon">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <hr>
-
-        <div class="page-footer" id="contacts">
-            <div class="footer-title">
-            </div>
-            <div class="footer-socials">
-                <div class="email-link txtlink">
-                    <a class="hoveranim" href="mailto: personal.sepehr@gmail.com">personal.sepehr@gmail.com</a>
-                </div>
-                <div class="phonenum-link txtlink">
-                    <a class="hoveranim" href="tel: +447447962728">+447447962728</a>
-                </div>
-                <div class="linkdin-link txtlink">
-                    <a class="hoveranim" href="https://www.linkedin.com/in/sepshamloodev/">LinkedIn</a>
-                </div>
-                <div class="github-link txtlink">
-                    <a class="hoveranim" href="https://github.com/Sep-Fading">GitHub</a>
-                </div>
-                
-                <!--- Icons _-->
-                <div class="email-icon ftr-icon">
-                    <img src="./imgs/svgs/4550857_email_gmail_mail_sending_yahoo_icon.svg" alt="email-icon">
-                </div>
-
-                <div class="phonenum-icon ftr-icon">
-                    <img src="./imgs/svgs/2643221_call_chat_messenger_talk_viber_icon.svg" alt="phonenum-icon">
-                </div>
-
-                <div class="linkdin-icon ftr-icon">
-                    <img src="./imgs/svgs/5279114_linkedin_network_social network_linkedin logo_icon.svg" alt="linkdin-icon">
-                </div>
-
-                <div class="github-icon ftr-icon">
-                    <img src="./imgs/svgs/291716_github_logo_social network_social_icon.svg" alt="github-icon">
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
