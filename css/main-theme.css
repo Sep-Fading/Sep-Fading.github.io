@@ -12,7 +12,7 @@ body {
     width: 100vw;
     height: 200vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(3, 5fr);
+    grid-template-rows: 0.5fr repeat(3, 5fr);
     grid-template-areas:
     'header-main' 
     'firstpage'
@@ -72,6 +72,10 @@ hr{
 
 
 /* Header & Nav Menu */
+
+.nav-button{
+    display: none;
+}
 
 .page-header-center {
     justify-items: center;
