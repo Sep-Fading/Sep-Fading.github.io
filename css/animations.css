@@ -42,7 +42,7 @@
     transition: all 800ms;
 }
 
-.show {
+.show, .anim {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
